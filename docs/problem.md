@@ -119,7 +119,7 @@ References:
 
 ## High-Level Workflow
 
-![Downstream impact workflow](Workflow.png)
+![Downstream impact workflow](../Workflow.png)
 
 ## Project Objective
 
