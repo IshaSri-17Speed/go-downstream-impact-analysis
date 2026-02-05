@@ -44,13 +44,14 @@ The tool is designed around three core capabilities:
 
 1. **Dependency Discovery**  
    Identify downstream Go modules that depend on a given module using
-   reliable data sources such as [deps.dev](https://docs.deps.dev/api/v3/) and [pkg.go.dev](https://pkg.go.dev/).
+   reliable data sources such as[ GitHub’s code search](https://docs.github.com/en/rest/search/search) API by
+   analyzing `go.mod` references.
 
-2. **Downstream Test Execution**  
+3. **Downstream Test Execution**  
    Safely clone and execute test suites of downstream projects for
    different versions of a module in isolated environments.
 
-3. **Impact Comparison**  
+4. **Impact Comparison**  
    Compare results before and after a change and produce a summary that
    highlights newly introduced failures and unaffected dependents.
 
@@ -61,7 +62,7 @@ The tool is designed around three core capabilities:
 This repository currently contains:
 
 - Initial problem analysis and design notes
-- An early prototype for downstream dependency discovery using [deps.dev](https://deps.dev/)
+- An early prototype for downstream dependency discovery using [GitHub’s code search API](https://docs.github.com/en/rest/search/search)
 
 The implementation will be incrementally expanded during the mentorship.
 
